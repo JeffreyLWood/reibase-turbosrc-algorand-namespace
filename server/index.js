@@ -106,10 +106,10 @@ app.use(
 
 try {
   //Will delete data delete data from db on npm start:
-  db.sync({ force: true });
+  //db.sync({ force: true });
 
   //Will not delete data from db on npm start:
-  // db.sync();
+  db.sync();
 
   db.authenticate();
   console.log(
